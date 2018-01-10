@@ -61,11 +61,11 @@ public class Bruteforce {
 	private char[] bruteRecursive(String searchWord, int maxLength){
 		char[] find = new char[0];
 		
-		//go on as long max length no reached
+		// go on as long as max length no reached
 		for(int i = 0; i < maxLength; i++){
 			find = this.bruteRecursiveInner(searchWord, "", i);
 			
-			//if not empty result returned it must be a find
+			// if result not empty, it must be a find
 			if(find.length > 0){
 				return find;
 			}
@@ -80,21 +80,21 @@ public class Bruteforce {
 		for(int i = 0; i < charset.length; i++){
 			hWord = currWord + charset[i];
 			
-			//if current depth for length is not leaf
+			// if current depth is not a leaf
 			if(depth > 0){
 				retWord = this.bruteRecursiveInner(searchWord, hWord, depth-1);
 				
-				//don't wait on other results if found
+				// don't wait on other results if accordance found
 				if(retWord.length > 0)
 					return retWord;
 				
-			//current depth is leaf
+			// current depth is leaf
 			}else if(depth == 0){
 				
-				//update iterations
+				// update iterations
 				this.iterations++;
 				
-				//check if search word
+				// check if search word equals current word 
 				if(hWord.equals(searchWord)){
 					return hWord.toCharArray();
 				}
@@ -108,13 +108,13 @@ public class Bruteforce {
 		long startTime = System.currentTimeMillis();
 		String find = "";
 		
-		//reset iterations on reuse
+		// reset iterations on reuse
 		this.iterations = 0;
 		
-		//start the brute forcing
+		// start the brute forcing
 		find = new String(bruteRecursive(word, maxLength));
 		
-		//output on result
+		// output on result
 		System.out.println("Time needed: " + (System.currentTimeMillis() - startTime) + "ms");
 		System.out.println("Iterations required: " + iterations);
 		if(word.equals(find))
