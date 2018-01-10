@@ -1,6 +1,6 @@
 /*######################################################'
  #                                                      #
- #   Iterative BruteForce (Java)                        #
+ #   Recursive BruteForce (Java)                        #
  #                                                      #
  #   Purpose: Small Kata project to recursively         #
  #            find / brute force a predefined string.   #

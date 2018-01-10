@@ -1,6 +1,6 @@
 /*######################################################'
  #                                                      #
- #   Iterative BruteForce (Java)                        #
+ #   Recursive BruteForce (Java)                        #
  #                                                      #
  #   Purpose: Small Kata project to recursively         #
  #            find / brute force a predefined string.   #
@@ -61,7 +61,7 @@ public class Bruteforce {
 	private char[] bruteRecursive(String searchWord, int maxLength){
 		char[] find = new char[0];
 		
-		// go on as long as max length no reached
+		// go on as long as max length not reached
 		for(int i = 0; i < maxLength; i++){
 			find = this.bruteRecursiveInner(searchWord, "", i);
 			
