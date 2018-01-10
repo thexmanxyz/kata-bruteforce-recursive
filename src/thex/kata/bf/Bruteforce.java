@@ -111,7 +111,7 @@ public class Bruteforce {
 		//reset iterations on reuse
 		this.iterations = 0;
 		
-		//decide which method to use
+		//start the brute forcing
 		find = new String(bruteRecursive(word, maxLength));
 		
 		//output on result
