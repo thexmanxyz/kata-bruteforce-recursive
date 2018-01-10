@@ -104,7 +104,7 @@ public class Bruteforce {
 	}
 	
 	
-	public void find(String word, int maxLength, boolean recursive){
+	public void find(String word, int maxLength){
 		long startTime = System.currentTimeMillis();
 		String find = "";
 		

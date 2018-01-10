@@ -20,6 +20,6 @@ public class BruteforceTest {
 	public static void main(String[] args) {
 		System.out.println("Start Recursive Bruteforce:");
 		Bruteforce bf = Bruteforce.getBFAll();
-		bf.find(WORD, MAX_LENGTH, true);
+		bf.find(WORD, MAX_LENGTH);
 	}
 }
