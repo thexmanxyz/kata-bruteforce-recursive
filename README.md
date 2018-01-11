@@ -17,7 +17,7 @@ Start the bruteforce with the `find(String word, int maxLength)` method:
 - `word` - the word to bruteforce
 - `maxLength` - the length limit for the bruteforce
 
-For debug and pre-generation of combinations take also a look on `setOutput(boolean)`, `setStore(boolean)` and `getPassStore()`.
+For debug or pre-generation of combinations take also a look on `setOutput(boolean)`, `setStore(boolean)` and `getPassStore()`.
 
 ## Info
 DO NOT use this project or source code for illegal activities.
