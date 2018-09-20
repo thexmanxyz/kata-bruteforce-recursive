@@ -3,7 +3,7 @@
  #   Kata - Recursive Bruteforce                        #
  #                                                      #
  #   Purpose: Small Kata project to recursively         #
- #            find / brute force a predefined string.   #
+ #            find / bruteforce a predefined string.    #
  #                                                      #
  #   Author: Andreas Kar (thex) <andreas.kar@gmx.at>    #
  #   Repository: https://git.io/fAHyK                   #

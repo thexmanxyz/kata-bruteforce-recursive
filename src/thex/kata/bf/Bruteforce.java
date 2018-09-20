@@ -3,7 +3,7 @@
  #   Kata - Recursive Bruteforce                        #
  #                                                      #
  #   Purpose: Small Kata project to recursively         #
- #            find / brute force a predefined string.   #
+ #            find / bruteforce a predefined string.    #
  #                                                      #
  #   Author: Andreas Kar (thex) <andreas.kar@gmx.at>    #
  #   Repository: https://git.io/fAHyK                   #
@@ -131,14 +131,14 @@ public class Bruteforce {
 		// reset iterations on reuse
 		this.iterations = 0;
 		
-		// start the brute forcing
+		// start bruteforce
 		find = new String(bruteRecursive(word, maxLength));
 		
-		// output on result
+		// output results and statistics
 		System.out.println("Time needed: " + (System.currentTimeMillis() - startTime) + "ms");
 		System.out.println("Iterations required: " + iterations);
 		
-		// no output on store because no matching took place
+		// no output if store is enabled because no matching took place
 		if(!store){
 			if(word.equals(find))
 			    System.out.println("Password: " + find);
