@@ -30,4 +30,4 @@ DO NOT use this project or source code for illegal activities.
 None
 
 ## by [thex](https://github.com/thexmanxyz)
-Copyright (c) 2018, free to use in personal and commercial software as per the [license](/LICENSE.md).
+Copyright (c) 2018, free to use in personal and commercial software as per the [license](/LICENSE).
